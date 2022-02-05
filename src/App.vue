@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:37:47
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-05 20:03:09
+ * @LastEditTime: 2022-02-05 22:58:03
  * @FilePath: \my-element-components\src\App.vue
  * @Description: 
 -->
@@ -12,20 +12,9 @@
 
 <script setup lang="ts"></script>
 <style lang="scss">
-* {
-  margin: 0;
-  padding: 0;
-}
-svg {
-  width: 1em;
-  height: 1em;
-}
-
-html,
-body,
-#app,
-.el-container,
-.el-menu {
-  height: 100%;
+@import './styles/base';
+@import './styles/ui';
+.notification-popper-class {
+  padding: 0 !important;
 }
 </style>

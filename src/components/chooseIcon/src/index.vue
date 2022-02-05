@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 21:41:15
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-05 22:23:36
+ * @LastEditTime: 2022-02-05 22:56:57
  * @FilePath: \my-element-components\src\components\chooseIcon\src\index.vue
  * @Description: 
 -->
@@ -10,12 +10,26 @@
   <el-button @click="handleClick" type="primary">
     <slot></slot>
   </el-button>
-  {{ visible }}
-  <el-dialog :title="title" v-model="dialogVisible">111</el-dialog>
+  <div class="m-choose-icon-dialog-body-height">
+    <el-dialog :title="title" v-model="dialogVisible">
+      <div class="container">
+        <div class="item" v-for="(item, index) in Object.keys(ElIcons)" :key="index" @click="clickItem(item)">
+          <div class="text">
+            <component :is="`el-icon-${toLine(item)}`"></component>
+          </div>
+          <div class="icon">{{ item }}</div>
+        </div>
+      </div>
+    </el-dialog>
+  </div>
 </template>
 
 <script setup lang="ts">
+import * as ElIcons from '@element-plus/icons';
 import { watch, ref } from 'vue';
+import { toLine } from '../../../utils';
+import { useCopy } from '../../../hooks/useCopy';
+
 const props = defineProps<{
   // 弹出框的标题
   title: string;
@@ -26,11 +40,17 @@ let emits = defineEmits(['update:visible']);
 
 // 拷贝一份父组件传递过来的visible
 let dialogVisible = ref<boolean>(props.visible);
-
 const handleClick = () => {
-  console.warn(1);
-
   emits('update:visible', !props.visible);
+};
+
+// 点击图标
+let clickItem = (item: string) => {
+  let text = `<el-icon-${toLine(item)} />`;
+  // 复制文本
+  useCopy(text);
+  // 关闭弹框
+  dialogVisible.value = false;
 };
 
 // 监听visible的变化 只能监听第一次的变化
@@ -48,4 +68,30 @@ watch(
   }
 );
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.item {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  height: 70px;
+}
+.text {
+  font-size: 14px;
+}
+.icon {
+  flex: 1;
+}
+svg {
+  width: 2em;
+  height: 2em;
+}
+</style>
