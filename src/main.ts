@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:37:47
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-05 19:24:08
+ * @LastEditTime: 2022-02-05 21:50:11
  * @FilePath: \my-element-components\src\main.ts
  * @Description:
  */
@@ -13,6 +13,7 @@ import ElementPlus from 'element-plus';
 import 'element-plus/dist/index.css';
 import * as Icons from '@element-plus/icons';
 import { toLine } from './utils';
+import mUI from './components';
 
 const app = createApp(App);
 
@@ -24,5 +25,5 @@ for (let i in Icons) {
 }
 
 app.use(router);
-app.use(ElementPlus);
+app.use(ElementPlus).use(mUI);
 app.mount('#app');
