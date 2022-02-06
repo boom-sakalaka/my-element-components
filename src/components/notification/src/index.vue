@@ -2,14 +2,21 @@
  * @Author: GZH
  * @Date: 2022-02-06 14:52:44
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 15:05:41
+ * @LastEditTime: 2022-02-06 15:17:56
  * @FilePath: \my-element-components\src\components\notification\src\index.vue
  * @Description: 
 -->
 <template>
-  <el-badge :value="value" :max="max" :is-dot="isDot">
-    <component :is="`el-icon-${toLine(icon)}`" />
-  </el-badge>
+  <el-popover placement="bottom" :width="300" trigger="click">
+    <template #default>
+      <slot></slot>
+    </template>
+    <template #reference>
+      <el-badge :value="value" :max="max" :is-dot="isDot">
+        <component :is="`el-icon-${toLine(icon)}`" />
+      </el-badge>
+    </template>
+  </el-popover>
 </template>
 
 <script setup lang="ts">
