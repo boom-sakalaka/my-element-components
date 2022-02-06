@@ -2,14 +2,14 @@
  * @Author: GZH
  * @Date: 2022-02-05 21:49:15
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 11:39:24
+ * @LastEditTime: 2022-02-06 14:37:57
  * @FilePath: \my-element-components\src\components\index.ts
  * @Description:
  */
 import { App } from 'vue';
 import chooseArea from './chooseArea';
 import chooseIcon from './chooseIcon';
-// import trend from './trend'
+import trend from './trend';
 // import notification from './notification'
 // import list from './list'
 // import menu from './menu'
@@ -25,7 +25,7 @@ import chooseIcon from './chooseIcon';
 const components = [
   chooseArea,
   chooseIcon,
-  // trend,
+  trend,
   // notification,
   // list,
   // menu,

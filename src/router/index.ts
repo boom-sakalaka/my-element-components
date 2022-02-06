@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:59:58
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 11:37:41
+ * @LastEditTime: 2022-02-06 14:38:49
  * @FilePath: \my-element-components\src\router\index.ts
  * @Description:
  */
@@ -26,6 +26,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/chooseArea',
         component: () => import('../views/chooseArea/index.vue'),
+      },
+      {
+        path: '/trend',
+        component: () => import('../views/trend/index.vue'),
       },
     ],
   },
