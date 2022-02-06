@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 21:49:15
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 14:37:57
+ * @LastEditTime: 2022-02-06 14:54:18
  * @FilePath: \my-element-components\src\components\index.ts
  * @Description:
  */
@@ -10,7 +10,7 @@ import { App } from 'vue';
 import chooseArea from './chooseArea';
 import chooseIcon from './chooseIcon';
 import trend from './trend';
-// import notification from './notification'
+import notification from './notification';
 // import list from './list'
 // import menu from './menu'
 // import chooseTime from './chooseTime'
@@ -26,7 +26,7 @@ const components = [
   chooseArea,
   chooseIcon,
   trend,
-  // notification,
+  notification,
   // list,
   // menu,
   // chooseTime,

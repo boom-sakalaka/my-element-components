@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:59:58
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 14:38:49
+ * @LastEditTime: 2022-02-06 14:53:53
  * @FilePath: \my-element-components\src\router\index.ts
  * @Description:
  */
@@ -30,6 +30,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/trend',
         component: () => import('../views/trend/index.vue'),
+      },
+      {
+        path: '/notification',
+        component: () => import('../views/notification/index.vue'),
       },
     ],
   },
