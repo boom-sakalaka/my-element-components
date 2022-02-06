@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 21:24:30
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-05 21:35:01
+ * @LastEditTime: 2022-02-06 17:38:23
  * @FilePath: \my-element-components\src\components\container\src\navHeader\index.vue
  * @Description: 
 -->
@@ -31,5 +31,9 @@ const toggle = () => {
   padding: 0 20px;
   display: flex;
   align-items: center;
+}
+svg {
+  width: 1em;
+  height: 1em;
 }
 </style>

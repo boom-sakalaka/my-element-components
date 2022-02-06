@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:59:58
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 14:53:53
+ * @LastEditTime: 2022-02-06 16:54:02
  * @FilePath: \my-element-components\src\router\index.ts
  * @Description:
  */
@@ -34,6 +34,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/notification',
         component: () => import('../views/notification/index.vue'),
+      },
+      {
+        path: '/menu',
+        component: () => import('../views/menu/index.vue'),
       },
     ],
   },
