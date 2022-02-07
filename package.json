@@ -9,7 +9,10 @@
   "dependencies": {
     "element-plus": "^1.1.0-beta.20",
     "vue": "^3.2.25",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "lodash": "^4.17.21",
+    "@types/lodash": "^4.14.176",
+    "wangeditor": "^4.7.9"
   },
   "devDependencies": {
     "@element-plus/icons": "^0.0.11",

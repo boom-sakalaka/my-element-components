@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:59:58
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-07 15:52:07
+ * @LastEditTime: 2022-02-07 21:52:53
  * @FilePath: \my-element-components\src\router\index.ts
  * @Description:
  */
@@ -50,6 +50,14 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/chooseCity',
         component: () => import('../views/chooseCity/index.vue'),
+      },
+      {
+        path: '/form',
+        component: () => import('../views/form/index.vue'),
+      },
+      {
+        path: '/modalForm',
+        component: () => import('../views/modalForm/index.vue'),
       },
     ],
   },

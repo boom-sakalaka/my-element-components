@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 21:49:15
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-07 15:52:54
+ * @LastEditTime: 2022-02-07 21:52:05
  * @FilePath: \my-element-components\src\components\index.ts
  * @Description:
  */
@@ -17,8 +17,8 @@ import chooseTime from './chooseTime';
 import chooseDate from './chooseDate';
 import progress from './progress';
 import chooseCity from './chooseCity';
-// import form from './form'
-// import modalForm from './modalForm'
+import form from './form';
+import modalForm from './modalForm';
 // import table from './table'
 // import calendar from './calendar'
 
@@ -33,8 +33,8 @@ const components = [
   chooseDate,
   chooseCity,
   progress,
-  // form,
-  // modalForm,
+  form,
+  modalForm,
   // table,
   // calendar
 ];
