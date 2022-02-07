@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:59:58
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-06 20:17:20
+ * @LastEditTime: 2022-02-07 15:20:58
  * @FilePath: \my-element-components\src\router\index.ts
  * @Description:
  */
@@ -42,6 +42,10 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/progress',
         component: () => import('../views/progress/index.vue'),
+      },
+      {
+        path: '/chooseTime',
+        component: () => import('../views/chooseTime/index.vue'),
       },
     ],
   },
