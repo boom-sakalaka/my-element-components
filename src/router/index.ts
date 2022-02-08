@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:59:58
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-07 21:52:53
+ * @LastEditTime: 2022-02-08 19:48:11
  * @FilePath: \my-element-components\src\router\index.ts
  * @Description:
  */
@@ -58,6 +58,14 @@ const routes: RouteRecordRaw[] = [
       {
         path: '/modalForm',
         component: () => import('../views/modalForm/index.vue'),
+      },
+      {
+        path: '/calendar',
+        component: () => import('../views/calendar/index.vue'),
+      },
+      {
+        path: '/table',
+        component: () => import('../views/table/index.vue'),
       },
     ],
   },

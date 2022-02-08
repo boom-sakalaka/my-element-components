@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 21:49:15
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-07 21:52:05
+ * @LastEditTime: 2022-02-08 19:47:58
  * @FilePath: \my-element-components\src\components\index.ts
  * @Description:
  */
@@ -19,8 +19,8 @@ import progress from './progress';
 import chooseCity from './chooseCity';
 import form from './form';
 import modalForm from './modalForm';
-// import table from './table'
-// import calendar from './calendar'
+import table from './table';
+import calendar from './calendar';
 
 const components = [
   chooseArea,
@@ -35,8 +35,8 @@ const components = [
   progress,
   form,
   modalForm,
-  // table,
-  // calendar
+  table,
+  calendar,
 ];
 
 export default {

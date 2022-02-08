@@ -2,7 +2,7 @@
  * @Author: GZH
  * @Date: 2022-02-05 18:37:47
  * @LastEditors: GZH
- * @LastEditTime: 2022-02-05 21:50:11
+ * @LastEditTime: 2022-02-08 21:25:20
  * @FilePath: \my-element-components\src\main.ts
  * @Description:
  */
@@ -14,6 +14,7 @@ import 'element-plus/dist/index.css';
 import * as Icons from '@element-plus/icons';
 import { toLine } from './utils';
 import mUI from './components';
+import './mock';
 
 const app = createApp(App);
 
